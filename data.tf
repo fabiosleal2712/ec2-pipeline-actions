@@ -1,13 +1,13 @@
-data "<PhoneNumber>" "<PhoneNumber>" {
+data "aws_ami" "amazon_linux" {
   most_recent = true
 
   filter {
-    name   = "<PhoneNumber>"
+    name   = "name"
     values = ["amzn-ami-hvm-*"]
   }
 
   filter {
-    name   = "<PhoneNumber>"
+    name   = "architecture"
     values = ["x86_64"]
   }
 }
