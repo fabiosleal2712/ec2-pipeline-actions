@@ -9,6 +9,6 @@ resource "aws_db_instance" "mysql" {
   db_subnet_group_name = aws_db_subnet_group.rds.name
 }
 
-resource "aws_db_subnet_group" "my_db_subnet_group" {
+resource "aws_db_subnet_group" "rds" {
   subnet_ids = [aws_subnet.private2.id]
 }
